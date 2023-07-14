@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Demo</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner-header">
+                <div class="logo">
+                    <a href="/" alt="logo">
+                        <img src="" alt="">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <div class="inner-icon search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0z" stroke="#abadb0" stroke-width="2" stroke-linecap="round"/></g></svg>
+                    </div>
+                    <input class="search-content" type="text" placeholder="검색">
+                </div>
+                <nav class="icon-bar">
+                    <div class="inner-icon">
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="inner-content">
+                <article class="content">
+                        <div class="post-wrapper">
+                            <header class="post-header">
+                                <div class="profile">
+                                    <div class="inner-icon profile-img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0zm-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0z" fill="#262626"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1zM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0 1 12.065 14a8.984 8.984 0 0 1 7.092 3.458A9 9 0 1 0 3 12zm9 9a8.963 8.963 0 0 1-5.672-2.012A6.992 6.992 0 0 1 12.065 16a6.991 6.991 0 0 1 5.689 2.92A8.964 8.964 0 0 1 12 21z" fill="#262626"/></g></svg>
+                                    </div>
+                                    <div class="nickname">
+                                        <a class="set-black" href="#" title="">Lorem, ipsum.</a>
+                                    </div>
+                                </div>
+                            </header>
+                            <section class="post-main">
+                                <div class="window">
+                                    <div class="img-container" data-length="4">
+                                        <img src="img/d.png" style="width: 100%; object-fit: cover;" data-order="0">
+                                        <img src="img/a.png" style="width: 100%; object-fit: cover;" data-order="1">
+                                        <img src="img/b.png" style="width: 100%; object-fit: cover;" data-order="2">
+                                        <img src="img/c.png" style="width: 100%; object-fit: cover;" data-order="3">
+                                    </div>
+                                </div>
+                                <div class="img-arrow start">
+                                    <button type="button" class="prev disabled">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                                            </svg>
+                                    </button>
+                                    <button type="button" class="next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </section>
+                            <section class="post-footer" data-post="${post.id}">
+                                <section class="post-icon">
+                                    <button type="button" alt="저장" class="bookmark recruit" data-user="${post.userId}">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M24 16v10.752l-7.096-3.59l-.904-.457l-.9.456L8 26.748V4h10V2H8a2 2 0 0 0-2 2v26l10-5.054L26 30V16z" fill="black"/><path d="M26 6V2h-2v4h-4v2h4v4h2V8h4V6h-4z" fill="black"/></svg>
+                                    </button>
+                                    <div class="icon-wrapper">
+                                        <a href="#" alt="개인메시지">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.767L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.233V16H4V4h16v12z" fill="black"/></svg>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="post-status">
+                                    <div class="status-detail">
+                                        <span>저장 0명</span>
+                                    </div>
+                                </section>
+                                <section class="post-detail">
+                                    <div class="description">
+                                        <a href="#" title="" class="status-detail set-black">Lorem, ipsum.</a>
+                                        <span style="font-size: 14px">Lorem, ipsum dolor.</span>
+                                    </div>
+                                    <div class="date-info">
+                                        <time datetime="">Lorem, ipsum.</time>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </section>
+<script src="index.js"></script>
+</body>
+</html>
